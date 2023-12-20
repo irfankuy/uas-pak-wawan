@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 100%; /* Tombol mengisi lebar card */
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input.form-control {
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Optional: Style for small screens */
+@media (max-width: 576px) {
+    .card {
+        margin-top: 10px;
+    }
+}

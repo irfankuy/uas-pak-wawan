@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent)url(bento.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px 60px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 0 15px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position:absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.text-box{
+    color:#fff;
+    position:absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url();
+    background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinete;
+}
+@keyframes back{
+    100%{
+        background-position: 200px 0;
+}
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    align-items: center;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.social-icons img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+.about{
+    height: 600px;
+}
+.image{
+    align-items: center;
+    padding: 20px 10%;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border:var(--border);
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+font-size: 1.5rem;
+text-decoration: line-through;
+font-weight: lighter;
+}
+
+.menu .box-container .box:hover:hover{
+    background: #fff;
+}
+
+.menu .box-container .box:hover > *{
+    color: var(--block);
+}
+
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    border:var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:black;
+    padding:2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color:#fff;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color:yellow;
+}
+.contact .row{
+    display: flex;
+    background: #e8b95e;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100px;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align:center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.contact .row form .inputbox span{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:#e8e741;
+}
+
+.contact .row form .inputbox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputbox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background:none;
+}
+
+
+.footer{
+    background: #74481a;
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    margin:.3rem;
+    border-radius: 50%;
+}
